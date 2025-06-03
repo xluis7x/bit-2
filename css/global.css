@@ -1,0 +1,66 @@
+* 
+*::before
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-blue: hsl(240, 100%, 50%) ;
+    --color-light-blue: hsl(209, 90%, 59%) ;
+    --color-light-gray: hsla(0, 0%, 85%, 90%) ;
+}
+
+/* open-sans-regular - hebrew */
+@font-face {
+  font-display: swap;  
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v40-hebrew-regular.woff2') format('woff2'); 
+}
+/* open-sans-800 - hebrew */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/open-sans-v40-hebrew-800.woff2') format('woff2'); 
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); 
+}
+
+.button {
+    display: inline-block;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 18px;
+    color: white;
+    transition: background 150ms ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: var(--color-light-gray);
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Open Sans Bold';
+}
+
+p {
+    margin: 0;
+}
