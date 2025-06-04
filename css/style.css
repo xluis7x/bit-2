@@ -92,13 +92,15 @@ header {
 
 .h1 {
     color: black;
-    padding-block: 40px;
+    padding-block-end: 40px;
+    padding-block-start: 10px;
     text-align: center;
     line-height: 2rem;
 }
 
 hr {
     width: 50%;
+    margin-block: 20px 40px;
 }
 
 .footer {

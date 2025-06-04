@@ -16,7 +16,6 @@ function showStudents() {
         const srcImg = user ? `https://github.com/${user}.png` : failedImage;
         const secondProject = data[i].projects[1].score;
         const secondProjectAverage = secondProject.reduce((sum, val) => sum + val, 0);
-        const showGit = 
         listNames += `
         <div class="card">
         <h2>${data[i].student}</h2><p>Code: ${data[i].code}<br>
@@ -29,7 +28,7 @@ function showStudents() {
         <p><strong>Second Project:</strong> ${data[i].projects[1].name}</p>
         <p><strong>Grade:</strong> ${secondProjectAverage}/10</p><br>
         </div>
-        <a id="profile" class="button" target="_blank" href="https://github.com/${data[i].usernameGithub}">${data[i].usernameGithub}</a>
+        <a id="profile" class="button" target="_blank" href="https://github.com/${data[i].usernameGithub}">Github: ${data[i].usernameGithub}</a>
         </div>
         `;
       }
