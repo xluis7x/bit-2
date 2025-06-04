@@ -12,12 +12,14 @@ fetch('file.json')
       img = `<img class="card_img"  src="https://github.com/${info[i].usernameGithub}.png" alt="Profile Photo from ${info[i].usernameGithub}" width="234px">`
       listNames += `
         <div class="card">
-        <h3>${info[i].student}</h3><p>Code: ${info[i].code}<br>
+        <h2>${info[i].student}</h2><p>Code: ${info[i].code}<br>
         ${img}<br>
         <p>Intensity: ${info[i].intensity}<br>  
-        <h4>Projects</h4>
+        <h3>Projects</h3>
         <p><strong>First Project:</strong> ${info[i].projects[0].name}</p>
         <p><strong>Grade:</strong> ${info[i].projects[0].score}</p><br>
+        <p><strong>First Project:</strong> ${info[i].projects[1].name}</p>
+        <p><strong>Grade:</strong> ${info[i].projects[1].score}</p><br>
         <a class="button" target="_blank" href="https://github.com/${info[i].usernameGithub}">${info[i].usernameGithub}</a>
         </div>
         `;
