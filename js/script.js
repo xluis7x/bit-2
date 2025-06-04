@@ -9,17 +9,19 @@ fetch('file.json')
   .then((res) => res.json())
   .then((info) => {
     for (let i = 0; i < info.length; i++) {
-      img = `<img class="card_img"  src="https://github.com/${info[i].usernameGithub}.png" alt="Profile Photo from ${info[i].usernameGithub}" width="234px">`
+      img = `<img class="card_img"  src="https://github.com/${info[i].usernameGithub}.png" alt="Profile Photo from ${info[i].usernameGithub}" width="50%">`
       listNames += `
         <div class="card">
         <h2>${info[i].student}</h2><p>Code: ${info[i].code}<br>
         ${img}<br>
         <p>Intensity: ${info[i].intensity}<br>  
+        <div id="project">
         <h3>Projects</h3>
         <p><strong>First Project:</strong> ${info[i].projects[0].name}</p>
         <p><strong>Grade:</strong> ${info[i].projects[0].score}</p><br>
         <p><strong>First Project:</strong> ${info[i].projects[1].name}</p>
         <p><strong>Grade:</strong> ${info[i].projects[1].score}</p><br>
+        </div>
         <a class="button" target="_blank" href="https://github.com/${info[i].usernameGithub}">${info[i].usernameGithub}</a>
         </div>
         `;

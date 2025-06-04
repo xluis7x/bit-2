@@ -61,7 +61,11 @@ h1 {
     font-family: 'Open Sans Bold';
 }
 
-p {
+p, span {
     margin: 0;
     font-family: 'Open Sans';
+}
+
+.d-none {
+    display: none;
 }

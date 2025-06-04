@@ -1,11 +1,10 @@
-@import url(./global.css);
+@import './global.css';
 
 header {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-inline: 20px;
     padding-block-start: 5px;
     background-color: var(--color-light-gray);
     position: fixed;
@@ -26,23 +25,48 @@ header {
     max-width: 100%;
 }
 
+#hero {
+    max-width: 100%;
+}
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 25%);
     font-family: 'Open Sans';
     justify-content: center;
     row-gap: 20px;
     column-gap: 40px;
 }
 
+@media (max-width:1200px) {
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    font-family: 'Open Sans';
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 40px;
+    }
+}
+
+@media (max-width:740px) {
+    .cards {
+    display: grid;
+    grid-template-columns: 75%;
+    font-family: 'Open Sans';
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 40px;
+    }
+}
+
 .card {
+    max-width: 100%;
     background: hsla(235, 84%, 46%, 1);
     background: linear-gradient(200deg, hsla(235, 84%, 46%, 1) 15%, rgb(80, 169, 205) 100%, hsla(212, 55%, 50%, 1) 100%);
     background-color: var(--color-light-blue);
     border-radius: 24px;
     text-align: center;
-    padding-inline: 50px;
-    padding-block: 25px;
+    padding: 25px;
 }
 
 .card .button {
@@ -62,10 +86,19 @@ header {
     margin-block: 15px;
 }
 
+#students {
+    margin-block-end: 1.5rem;
+}
+
 .h1 {
     color: black;
     padding-block: 40px;
     text-align: center;
+    line-height: 2rem;
+}
+
+hr {
+    width: 50%;
 }
 
 .footer {
